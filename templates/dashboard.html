@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome, {{ user }} 👋</h1>
+        <p>This is your dashboard</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h3>Chatbot Access</h3>
+            <p>Talk to your assistant anytime.</p>
+            <a href="/" class="button">Go to Chatbot</a>
+        </div>
+
+        <div class="card">
+            <h3>Shop</h3>
+            <p>Check out our latest products.</p>
+            <a href="/about" class="button">Visit Shop</a>
+        </div>
+
+        <div class="card">
+            <h3>Contact Team</h3>
+            <p>Need help? Send us a message.</p>
+            <a href="/contact" class="button">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
